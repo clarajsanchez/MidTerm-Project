@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto&display=swap');
 
 *{
-    background: #f2f4fc;
     font-family: Roboto, sans-serif;
     color: #292e47;
-    font-size: 14px;
     line-height: 20px;
 }
+
+body{
+    background: #f2f4fc;
+}
+
+.container{
+    display: flex;
+    max-width: 1100px;
+}
+
+
+/* NAVBAR */
 
 #nav{
     height: 130px;
@@ -15,6 +25,9 @@
     align-items: center;
     margin-top: 50px;
 }
+
+
+/* HERO SECTION */
 
 #heroSection{
     height: 650px;
@@ -99,4 +112,103 @@ button{
 
 .content{
     width: 530px;
+}
+
+
+/* CLIENT SECTION */
+
+#clientSection{
+    display: flex;
+    justify-content: center;
+}
+
+#clientSection .container{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 130px;
+}
+
+.logo{
+    height: 96px;
+    display: flex;
+    align-items: center;
+}
+
+/* PROJECTS SECTION */
+
+#projectsSection{
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+    color: #292e47;
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+}
+
+#projectsSection h2{
+    line-height: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #292e47;
+    font-size: 40px;
+}
+
+#projectsSection img{
+    width: 340px;
+    height: 240px;
+}
+
+#projectsSection .container{
+    flex-direction: column;
+}
+
+.collection{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+
+    margin-top: 70px;
+}
+
+.project h3{
+    margin: 30px 30px 20px;
+    color: #292e47;
+    font-size: 24px;
+    line-height: 115%;
+    font-weight: 500;
+    font-weight: bold;
+}
+
+.project p{
+    margin: 30px 30px 20px;
+    color: #292e47;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.project a{
+    margin: 30px;
+    color: #072ac8;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.projContent{
+    width: 340px;
+    height: 204px;
+    background: white;
+    display: flex;
+    flex-direction: column;
 }
