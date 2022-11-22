@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./index.js">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navbar/navbar.css">
+</head>
+<body>
+    <nav id="navbar">
+    </nav>
+    <section id="heroSection">
+        <div class="container">
+            <div class="content">
+                <h2>Empower Your Business With Stunning Design!</h2>
+                <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+                <div class="frame">
+                    <p>See our work</p>
+                    <button>Get in touch</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="/assets/hero-section/card-1.png" alt="Card 1" id="c1">
+                <img src="/assets/hero-section/hero-image.png" alt="Hero Image">
+                <img src="/assets/hero-section/card-2.png" alt="Card 2">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+$.get("./navbar/navbar.html", function(data){
+    $("#navbar").replaceWith(data);
+});
+</script>

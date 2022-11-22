@@ -1,0 +1,46 @@
+.container{
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+}
+#nav img{
+    width: 60.53px;
+    height: 18.46px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    color: #6B708D;
+    text-decoration: none;
+}
+a:first-child{
+    color: #0082f3;
+}
+a:hover{
+    color: #072AC8;
+}
+
+button{
+    width: 150px;
+    height: 52px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 130%;
+    background: #072AC8;
+    color: white;
+    border: none;
+}
+button:hover{
+    background-color: #292e47;
+    cursor: pointer;
+}
