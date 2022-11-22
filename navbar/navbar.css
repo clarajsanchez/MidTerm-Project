@@ -19,14 +19,14 @@
     justify-content: space-between;
 }
 
-a{
+#nav a{
     color: #6B708D;
     text-decoration: none;
 }
-a:first-child{
+#nav a:first-child{
     color: #0082f3;
 }
-a:hover{
+#nav a:hover{
     color: #072AC8;
 }
 

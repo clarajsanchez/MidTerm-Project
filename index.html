@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./index.js">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
+    <link rel="stylesheet" href="./footer/footer.css">
 </head>
 <body>
     <nav id="navbar">
@@ -86,12 +87,62 @@
         <img class="emoji three" src="/assets/testimonial-section/memoji-3.png" alt="">
         <img class="emoji four" src="/assets/testimonial-section/memoji-4.png" alt="">
     </section>
+    <section id="servicesSection">
+        <div class="container">
+            <h1>Our Services</h1>
+            <div class="services project">
+                <div class="serviceItem">
+                    <div class="img uno"></div>
+                    <h3>User Interface Design</h3>
+                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="serviceItem">
+                    <div class="img dos"></div>
+                    <h3>User Experience Design</h3>
+                    <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div class="serviceItem">
+                    <div class="img tres"></div>
+                    <h3>Application Development</h3>
+                    <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="CTASection">
+        <div class="container">
+            <h1>Do you have any questions?</h1>
+            <p>Let us help you!</p>
+            <div class="email">
+                <form>
+                    <div class="emailIcon"></div>
+                    <input type="email" class="input" maxlength="250" name="email" placeholder="Enter your email" required>
+                </form>
+                <input type="submit" value="Subscribe" class="subs">
+                <div class="form-done" tabindex="-1" role="region" aria-label="Email Form success">
+                    <div>Thank you! Your submission has been received!</div>
+                </div>
+                <div class="form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
+                    <div>Oops! Something went wrong while submitting the form.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"></footer>
 </body>
 </html>
 
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
-$.get("./navbar/navbar.html", function(data){
-    $("#navbar").replaceWith(data);
-});
+    $.get("./navbar/navbar.html", function(data){
+        $("#navbar").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("./footer/footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
 </script>

@@ -10,6 +10,11 @@ body{
     background: #f2f4fc;
 }
 
+section{
+    display: flex;
+    justify-content: center;
+}
+
 .container{
     display: flex;
     max-width: 1100px;
@@ -20,8 +25,6 @@ body{
 
 #nav{
     height: 130px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 50px;
 }
@@ -31,8 +34,6 @@ body{
 
 #heroSection{
     height: 650px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     padding-top: 100px;
 }
@@ -55,7 +56,6 @@ body{
 #heroSection a{
     color: #6b708d;
     font-size: 17px;
-    /* font-weight: 500; */
     text-decoration: none;
 }
 
@@ -117,11 +117,6 @@ button{
 
 /* CLIENT SECTION */
 
-#clientSection{
-    display: flex;
-    justify-content: center;
-}
-
 #clientSection .container{
     width: 100%;
     justify-content: space-around;
@@ -139,8 +134,6 @@ button{
 
 #projectsSection{
     margin-top: 200px;
-    justify-content: center;
-    display: flex;
     color: #292e47;
     font-size: 24px;
     line-height: 115%;
@@ -225,8 +218,6 @@ button{
     margin-right: auto;
     margin-left: auto;
     max-width: 1320px;
-    display: flex;
-    justify-content: center;
 }
 
 #testimonialSection .container{
@@ -235,7 +226,7 @@ button{
     align-items: center;
 }
 
-#testimonialSection h3, p, div{
+#testimonialSection div{
     color: white;
 }
 
@@ -315,4 +306,158 @@ button{
     right: 0%;
     margin-top: 5%;
     margin-right: 10%;
+}
+
+
+/* SERVICES SECTION */
+
+#servicesSection{
+    margin-top: 200px;
+    padding: 0 30px;
+}
+
+#servicesSection .container{
+    flex-direction: column;
+}
+
+#servicesSection h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.serviceItem{
+    width: 340px;
+    max-height: 380px; 
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceItem .img{
+    width: 80px;
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 40px;
+    border-radius: 50%;
+    background-color: #ecf7ff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.serviceItem .uno{
+    background-image: url("/assets/services-section/icons/1.svg");
+}
+.serviceItem .dos{
+    background-image: url("/assets/services-section/icons/2.svg");
+}
+.serviceItem .tres{
+    background-image: url("/assets/services-section/icons/3.svg");
+}
+
+.services{
+    display: grid;
+    grid-auto-flow: row;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 16px;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+
+    margin-top: 70px;
+}
+
+
+/* CTA SECTION */
+
+#CTASection{
+    background-color: #ffc600;
+    width: 1320px;
+    height: 500px;
+    margin-top: 200px;
+}
+
+#CTASection h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#CTASection p{
+    font-size: 17px;
+    color: #6b708d;
+    margin-bottom: 0;
+}
+
+#CTASection .container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.email{
+    height: 80px;
+    width: 600px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#CTASection form{
+    margin-right: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.emailIcon{
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/newsletter/icon/mail.svg");
+    position: absolute;
+    left: 8%;
+    top: 27%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.input{
+    width: 393px;
+    height: 80px;
+    margin-bottom: 0px;
+    padding-left: 70px;
+    background-color: #ecf7ff;
+    color: #292e47;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+}
+
+.subs{
+    width: 198px;
+    height: 80px;
+    font-size: 17px;
+    line-height: 130%;
+    background: #072AC8;
+    color: white;
+    border: none;
+    padding-right: 60px;
+    padding-left: 60px;
+    cursor: pointer;
+}
+.subs:hover{
+    background-color: #292e47;
+}
+
+.form-done{
+    display: none;
+    padding: 20px;
+    text-align: center;
+    background-color: #dddddd;
+}
+.form-fail{
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffdede;
 }
