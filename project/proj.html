@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/navbar/navbar.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <link rel="stylesheet" href="/cta/cta.css">
+    <link rel="stylesheet" href="/projectSection/projectSection.css">
+    <link rel="stylesheet" href="/project/proj.css">
+</head>
+<body>
+    <nav id="navbar">
+    </nav>
+    <section id="project">
+        <div class="container">
+            <h1>Simplify</h1>
+            <div class="subtitulo">
+                <h3 class="subt-cont">UI Design & App Development</h3>
+                <div class="completed subt-cont">
+                    <p>Completed on</p>
+                    <p class="date">23/11/22</p>
+                </div>
+            </div>
+            <div class="project-foto">
+                <img src="/assets/projects-section/1.jpg" alt class="proj-foto">
+                <img src="/assets/projects-section/1.jpg" alt class="blurr">
+            </div>
+            <div class="project-texto">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum minima magnam unde corporis laboriosam. Nam voluptatibus et consequatur eum ullam quidem unde aliquid, doloribus aliquam vel expedita minus eos illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam deleniti dolore quaerat magni fuga voluptates hic ducimus. Id corrupti quis dolores sint unde eius doloribus amet, veritatis consequatur suscipit dolorem!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aspernatur exercitationem repellat veniam molestiae distinctio itaque pariatur, necessitatibus laudantium incidunt temporibus provident, rerum ad, nihil at aut dignissimos obcaecati modi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate rem quae placeat iure alias incidunt dolore excepturi quis natus obcaecati expedita voluptatum soluta, officiis, at explicabo doloribus voluptas! Amet.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projectsSection"></section>
+    <section id="cta"></section>
+    <footer id="footer"></footer>
+</body>
+</html>
+
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script>
+    $.get("/navbar/navbar.html", function(data){
+        $("#navbar").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/footer/footer.html", function(data){
+        $("#footer").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/cta/cta.html", function(data){
+        $("#cta").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/projectSection/projectSection.html", function(data){
+        $("#projectsSection").replaceWith(data);
+    });
+</script>
+
+<!-- mirar si se puede quitar -->
+<script src="/projectSection/projectSection.js"></script>

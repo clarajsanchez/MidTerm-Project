@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./navbar/navbar.css">
     <link rel="stylesheet" href="./footer/footer.css">
+    <link rel="stylesheet" href="/cta/cta.css">
+    <link rel="stylesheet" href="/projectSection/projectSection.css">
 </head>
 <body>
     <nav id="navbar">
@@ -40,35 +42,6 @@
         </div>
     </section>
     <section id="projectsSection">
-        <div class="container">
-            <h2>Recent Projects</h2>
-            <div class="collection">
-                <div class="project">
-                    <img src="/assets/projects-section/1.jpg" alt ="Simplify">
-                    <div class="projContent">
-                        <h3>Simplify</h3>
-                        <p>UI Design & App Development</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="/assets/projects-section/2.jpg" alt="Dashcoin">
-                    <div class="projContent">
-                        <h3>Dashcoin</h3>
-                        <p>Web Development</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="/assets/projects-section/3.jpg" alt="Vectorify">
-                    <div class="projContent">
-                        <h3>Vectorify</h3>
-                        <p>User Experience Design</p>
-                        <a href="#">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section id="testimonialSection">
         <div class="container">
@@ -112,37 +85,30 @@
             </div>
         </div>
     </section>
-    <section id="CTASection">
-        <div class="container">
-            <h1>Do you have any questions?</h1>
-            <p>Let us help you!</p>
-            <div class="email">
-                <form>
-                    <div class="emailIcon"></div>
-                    <input type="email" class="input" maxlength="250" name="email" placeholder="Enter your email" required>
-                </form>
-                <input type="submit" value="Subscribe" class="subs">
-                <div class="form-done" tabindex="-1" role="region" aria-label="Email Form success">
-                    <div>Thank you! Your submission has been received!</div>
-                </div>
-                <div class="form-fail" tabindex="-1" role="region" aria-label="Email Form failure">
-                    <div>Oops! Something went wrong while submitting the form.</div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="cta"></section>
     <footer id="footer"></footer>
 </body>
 </html>
 
+
 <script src="//code.jquery.com/jquery.min.js"></script>
 <script>
-    $.get("./navbar/navbar.html", function(data){
+    $.get("/navbar/navbar.html", function(data){
         $("#navbar").replaceWith(data);
     });
 </script>
 <script>
-    $.get("./footer/footer.html", function(data){
+    $.get("/footer/footer.html", function(data){
         $("#footer").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/cta/cta.html", function(data){
+        $("#cta").replaceWith(data);
+    });
+</script>
+<script>
+    $.get("/projectSection/projectSection.html", function(data){
+        $("#projectsSection").replaceWith(data);
     });
 </script>

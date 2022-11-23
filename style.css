@@ -17,7 +17,7 @@ section{
 
 .container{
     display: flex;
-    max-width: 1100px;
+    width: 1100px;
 }
 
 
@@ -130,81 +130,6 @@ button{
     align-items: center;
 }
 
-/* PROJECTS SECTION */
-
-#projectsSection{
-    margin-top: 200px;
-    color: #292e47;
-    font-size: 24px;
-    line-height: 115%;
-    font-weight: 500;
-}
-
-#projectsSection h2{
-    line-height: 36px;
-    margin-top: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #292e47;
-    font-size: 40px;
-}
-
-#projectsSection img{
-    width: 340px;
-    height: 240px;
-}
-
-#projectsSection .container{
-    flex-direction: column;
-}
-
-.collection{
-    display: grid;
-    grid-auto-flow: row;
-    grid-auto-columns: 1fr;
-    grid-column-gap: 40px;
-    grid-row-gap: 16px;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    -ms-grid-rows: auto auto;
-    grid-template-rows: auto auto;
-
-    margin-top: 70px;
-}
-
-.project h3{
-    margin: 30px 30px 20px;
-    color: #292e47;
-    font-size: 24px;
-    line-height: 115%;
-    font-weight: 500;
-    font-weight: bold;
-}
-
-.project p{
-    margin: 30px 30px 20px;
-    color: #292e47;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.project a{
-    margin: 30px;
-    color: #072ac8;
-    font-size: 17px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.projContent{
-    width: 340px;
-    height: 204px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-}
 
 /* TESTIMONIAL SECTION */
 #testimonialSection{
@@ -367,97 +292,4 @@ button{
     grid-template-rows: auto auto;
 
     margin-top: 70px;
-}
-
-
-/* CTA SECTION */
-
-#CTASection{
-    background-color: #ffc600;
-    width: 1320px;
-    height: 500px;
-    margin-top: 200px;
-}
-
-#CTASection h1{
-    margin-bottom: 20px;
-    font-size: 40px;
-}
-
-#CTASection p{
-    font-size: 17px;
-    color: #6b708d;
-    margin-bottom: 0;
-}
-
-#CTASection .container{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.email{
-    height: 80px;
-    width: 600px;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-#CTASection form{
-    margin-right: 20px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.emailIcon{
-    width: 30px;
-    height: 30px;
-    background-image: url("/assets/newsletter/icon/mail.svg");
-    position: absolute;
-    left: 8%;
-    top: 27%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-
-.input{
-    width: 393px;
-    height: 80px;
-    margin-bottom: 0px;
-    padding-left: 70px;
-    background-color: #ecf7ff;
-    color: #292e47;
-    font-size: 14px;
-    border: 1px solid #cccccc;
-}
-
-.subs{
-    width: 198px;
-    height: 80px;
-    font-size: 17px;
-    line-height: 130%;
-    background: #072AC8;
-    color: white;
-    border: none;
-    padding-right: 60px;
-    padding-left: 60px;
-    cursor: pointer;
-}
-.subs:hover{
-    background-color: #292e47;
-}
-
-.form-done{
-    display: none;
-    padding: 20px;
-    text-align: center;
-    background-color: #dddddd;
-}
-.form-fail{
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #ffdede;
 }
