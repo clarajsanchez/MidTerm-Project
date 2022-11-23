@@ -33,3 +33,15 @@ Creación del proyecto. Generación de los archivos:
 - index.js
 
 Como se puede observar en el árbol esquemático, se ha creado una carpeta por cada pantalla de la aplicación a parte de la página inicial.
+
+## Martes 22/11
+Generación del HTML y CSS del homePage (index), del navbar y del footer.
+Tanto el navbar como el footer se encuentran en archivos aparte, y son llamados desde las diferentes pantallas para evitar repetición de código.
+
+Se han añadaido las siguientes carpetas:
+- footer
+  - footer.css
+  - footer.html
+- navbar
+  - navbar.css
+  - navbar.html
