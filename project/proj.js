@@ -3,6 +3,7 @@ let projNum = parseInt(window.location.search.split("?")[1]);
 let tituloName;
 let subtituloEmail;
 let fotoNombre;
+let paragraphBody;
 
 const dynamicFetch = async () => {
   await fetch(
@@ -15,6 +16,7 @@ const dynamicFetch = async () => {
           tituloName = cleanResponse[i].name;
           subtituloEmail = cleanResponse[i].email;
           fotoNombre = cleanResponse[i].id;
+          paragraphBody = cleanResponse[i].body;
         }
 
         document.getElementById("project-titulo").innerHTML = tituloName;
@@ -25,22 +27,10 @@ const dynamicFetch = async () => {
         document.querySelector(
           ".blurr"
         ).src = `/assets/projects-section/${fotoNombre}.jpg`;
-        document.getElementById("proj-texto").innerHTML = "Dashcoin-text";
+        document.getElementById("proj-texto").innerHTML = paragraphBody;
       }
       console.log("done!");
     });
 };
 
 dynamicFetch();
-
-// if (projNum === 2) {
-// } else if (projNum === 3) {
-//   document.getElementById("project-titulo").innerHTML = "Vectorify";
-//   document.getElementById("project-subtitulo").innerHTML =
-//     "User Experience Design";
-//   document.getElementsByTagName("img")[0].src =
-//     "/assets/projects-section/3.jpg";
-//   document.getElementsByTagName("img")[1].src =
-//     "/assets/projects-section/3.jpg";
-//   document.getElementById("proj-texto").innerHTML = "Vectorify-text";
-// }

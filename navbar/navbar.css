@@ -43,3 +43,18 @@ button:hover{
     background-color: #292e47;
     cursor: pointer;
 }
+
+/* MOVIL  */
+@media (max-width: 420px){
+
+}
+
+/* TABLET */
+@media (min-width: 420px),(max-width: 820px){
+
+}
+
+/* ORDI */
+@media (min-width: 820px){
+
+}
