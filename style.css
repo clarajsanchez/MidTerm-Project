@@ -400,6 +400,22 @@ button{
         width: 100px;
         height: 100px;
     }
+
+    /* SEVICES SECTION */
+    #servicesSection{
+        margin-top: 40px;
+    }
+    .serviceItem{
+        width: 100%;
+        max-width: 340px;
+        max-height: 445px;
+    }
+    .serviceItem p{
+        height: 135px;
+    }
+    .serviceItem h3{
+        margin: 15px 30px 20px;
+    }
 }
 
 /* ORDI */
