@@ -1,14 +1,23 @@
-<section id="nav">
+<section id="nav" data-animation="default" data-collapse="medium" data-easing="ease" data-easing2="ease" role="banner"> 
     <div class="container">
-        <img src="/assets/logos/circle.svg" alt="Circle Logo" onclick="location.href='/index.html'">
+        <img id="circleLogo" src="/assets/logos/circle.svg" alt="Circle Logo" onclick="location.href='/index.html'">
         <div class="menu">
             <a href="/index.html">Home</a>
             <a href="#">Projects</a>
             <a href="#">Services</a>
         </div>
+
+        <!-- burger menu button -->
+        <div class="burger nav-button" onclick="repliegue()">
+            <img src="/assets/logos/burger.png" class="icon-nav-menu"></img>
+        </div>
+
+        <!-- contact us button -->
         <button onclick="location.href='/contact/contact.html'">
             Contact Us
         </button>
     </div>
 </section>
 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
