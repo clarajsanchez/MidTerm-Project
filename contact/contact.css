@@ -1,7 +1,7 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
-h2{
+#section-contact h2{
     font-weight: 900;
     font-size: 45px;
     margin-bottom: 40px;
@@ -9,8 +9,9 @@ h2{
 }
 #section-contact{
     margin-top: 100px;
+    display: block;
 }
-form {
+#section-contact form {
     padding: 0px 100px;
     margin-bottom: 100px;
 }
@@ -20,7 +21,7 @@ form {
     border: none;
     margin-top: 5px;
 }
-input::placeholder {
+#section-contact input::placeholder {
     color: grey;
     background-position-x: left;
     background-position-y: top;
@@ -33,13 +34,14 @@ input::placeholder {
     width: 97%;
     padding: 20px;
 }
-.div-contact{
+#section-contact .div-contact{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     width: 100%;
+    padding: 15px 0;
 }
 .email-class, .phone-class{
     width: 50%;
