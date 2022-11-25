@@ -8,6 +8,7 @@
 #CTASection h1{
     margin-bottom: 20px;
     font-size: 40px;
+    line-height: 44px;
 }
 
 #CTASection p{
@@ -92,7 +93,31 @@
 
 /* MOVIL  */
 @media (max-width: 420px){
-
+    #CTASection{
+        width: 100%;
+        background-color: #ffc600;
+    }
+    #CTASection .container{
+        max-width: 100%;
+    }
+    #CTASection h1{
+        font-size: 30px;
+        margin-top: -40px;
+    }
+    .email{
+        max-width: 247px;
+        flex-direction: column;
+        height: 180px;
+    }
+    form{
+        width: 247px;
+    }
+    .subs{
+        width: 247px;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
 }
 
 /* TABLET */

@@ -76,6 +76,17 @@
 
 /* MOVIL  */
 @media (max-width: 420px){
+    #projectsSection h2{
+        font-size: 30px;
+        text-align: center;
+    }
+    .collection{
+        margin-top: 20px;
+        justify-items: stretch;
+        grid-auto-flow: row;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto !important;
+    }
 
 }
 
