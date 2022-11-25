@@ -324,6 +324,11 @@ button{
 
 /* MOVIL  */
 @media (max-width: 420px){
+    /* HERO SECTION */
+
+    #heroSection h1{
+        font-size: 30px;
+    }
 
 }
 

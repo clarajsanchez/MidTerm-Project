@@ -68,6 +68,24 @@ button:hover{
         padding-right: 30px;
         padding-left: 30px;
     }
+    #main-menu-column {
+        display: none;
+        position: absolute;
+        top: 0;
+        margin-top: 65px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #C8C8C8;
+    }
+    #main-menu-row {
+        display: none;
+    }
+    #main-menu-column a {
+        margin: 30px 0px;
+    }
     #nav .menu{
         display: none;
     }
@@ -84,7 +102,12 @@ button:hover{
         font-size: 24px;
         cursor: pointer;
     }
-    
+    .display-menu {
+        display: flex !important;
+    }
+    .padding-nav{
+        padding-bottom: 240px;
+    }
 
 }
 
